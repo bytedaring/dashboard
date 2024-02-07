@@ -26,8 +26,28 @@
 <div
 	class="bg-base-100 text-base-content sticky top-0 z-30 h-16 w-full justify-center backdrop-blur transition-shadow duration-100 [transform:translate3d(0,0,0)] shadow-sm"
 >
-	<div class="navbar w-full">
-		<div class="flex flex-1"></div>
+	<nav class="navbar w-full">
+		<div class="flex flex-1 md:gap-1 lg:gap-2">
+			<!-- menu button  -->
+			<span
+				class="tooltip tooltip-bottom before:text-xs before:content-[attr(data-tip)]"
+				data-tip="Menu"
+			>
+				<label
+					for="drawer"
+					aria-label="Open menu"
+					class="btn btn-square btn-ghost drawer-button lg:hidden"
+				>
+					<Icon icon="heroicons-solid:menu" class="h-5 w-5" />
+				</label>
+			</span>
+			<!-- logo button -->
+			<div class="flex items-center gap-2 lg:hidden">
+				<a href="/" class="btn btn-ghost gap-1 px-2 md:gap-2">
+					<div class="font-title text-base-content text-lg md:text-2xl">{PUBLIC_SITE_NAME}</div>
+				</a>
+			</div>
+		</div>
 		<div class="flex-0">
 			<div class="dropdown dropdown-end">
 				<div tabindex="0" role="button" class="btn btn-ghost btn-circle">
@@ -72,5 +92,5 @@
 				</ul>
 			</div>
 		</div>
-	</div>
+	</nav>
 </div>

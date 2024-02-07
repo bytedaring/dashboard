@@ -3,6 +3,7 @@
 	import Sidebar from '$components/Sidebar.svelte';
 	import Header from '$components/Header.svelte';
 	import { navigating } from '$app/stores';
+	import { isOpenSidebar } from '$lib/stores/dashboardStore';
 
 	/** @type {HTMLElement} */
 	let wrapperEl;
@@ -16,14 +17,20 @@
 	<title>{PUBLIC_SITE_NAME}</title>
 </svelte:head>
 
-<section id="body">
-	<div class="flex h-screen">
-		<Sidebar />
-		<div class="flex flex-col flex-1 w-full">
+<div>
+	<div class="drawer lg:drawer-open min-h-screen bg-gray-100">
+		<input id="drawer" type="checkbox" class="drawer-toggle" bind:checked={$isOpenSidebar} />
+		<div class="drawer-content">
+			<!-- page content -->
 			<Header />
-			<main class="h-full overflow-auto px-4 md:px-6 pt-5 pb-10" bind:this={wrapperEl}>
+			<main class="overflow-auto px-4 md:px-6 pt-5 pb-5 border-l" bind:this={wrapperEl}>
 				<slot />
 			</main>
 		</div>
+		<div class="drawer-side z-40" style="scroll-behavior: smooth; scroll-padding-top: 5rem;">
+			<!-- Sidebar content -->
+			<label for="drawer" class="drawer-overlay" aria-label="Close Menu"></label>
+			<Sidebar />
+		</div>
 	</div>
-</section>
+</div>

@@ -40,6 +40,22 @@ export const links = [
         }
     },
     {
+        name: 'Tables',
+        path: '/tables',
+        icon: {
+            inactive: 'mdi:file-table-box-outline',
+            active: 'mdi:file-table-box'
+        }
+    },
+    {
+        name: 'Charts',
+        path: '/charts',
+        icon: {
+            inactive: 'mdi:chart-pie-outline',
+            active: 'mdi:chart-pie'
+        }
+    },
+    {
         name: 'Pages',
         icon: {
             inactive: 'mdi:papers-outline',
