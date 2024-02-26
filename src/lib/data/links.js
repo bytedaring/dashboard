@@ -63,16 +63,66 @@ export const links = [
         },
         nested_links: [
             {
-                name: 'Login',
-                path: '/login',
+                name: '404',
+                path: '/errors/404',
                 icon: {
                     inactive: 'solar:login-linear',
                     active: 'solar:login-bold'
                 }
             },
             {
-                name: 'Register',
-                path: '/register',
+                name: '500',
+                path: '/errors/500',
+                icon: {
+                    inactive: 'solar:login-linear',
+                    active: 'solar:login-bold'
+                }
+            },
+            {
+                name: 'Maintenance',
+                path: '/errors/400',
+                icon: {
+                    inactive: 'solar:login-linear',
+                    active: 'solar:login-bold'
+                }
+            },
+
+        ]
+    },
+    {
+        name: 'Authencation',
+        icon: {
+            inactive: 'mdi:lock-outline',
+            active: 'mdi:lock'
+        },
+        nested_links: [
+            {
+                name: 'Login in',
+                path: '/login-in',
+                icon: {
+                    inactive: 'solar:login-linear',
+                    active: 'solar:login-bold'
+                }
+            },
+            {
+                name: 'Sign up',
+                path: '/sign-up',
+                icon: {
+                    inactive: 'bx:user',
+                    active: 'bxs:user'
+                }
+            },
+            {
+                name: 'Reset password',
+                path: '/reset-password',
+                icon: {
+                    inactive: 'bx:user',
+                    active: 'bxs:user'
+                }
+            },
+            {
+                name: 'Forgot password',
+                path: '/forgot-password',
                 icon: {
                     inactive: 'bx:user',
                     active: 'bxs:user'
