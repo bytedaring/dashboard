@@ -36,7 +36,10 @@
   "type": "module",
   "dependencies": {
     "@svelte-put/clickoutside": "^3.0.1",
+    "clsx": "^2.1.0",
+    "lucide-svelte": "^0.340.0",
     "nprogress": "^0.2.0",
-    "tailwind-merge": "^2.2.1"
+    "tailwind-merge": "^2.2.1",
+    "tailwind-variants": "^0.2.0"
   }
 }
