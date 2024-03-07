@@ -1,6 +1,5 @@
 <script>
 	import Card from '$components/Card.svelte';
-	import '$lib/styles.css';
 	import Icon from '@iconify/svelte';
 
 	/** @type {import('./$types').PageData} */

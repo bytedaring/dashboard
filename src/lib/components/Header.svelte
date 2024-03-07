@@ -1,25 +1,6 @@
 <script>
 	import Icon from '@iconify/svelte';
 	import { PUBLIC_SITE_NAME } from '$env/static/public';
-
-	const links = [
-		{
-			name: 'Profile',
-			path: '/profile',
-			icon: {
-				inactive: 'bx:user',
-				active: 'bxs:user'
-			}
-		},
-		{
-			name: 'Settings',
-			path: '/settings',
-			icon: {
-				inactive: 'basil:settings-outline',
-				active: 'basil:settings'
-			}
-		}
-	];
 </script>
 
 <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
@@ -83,11 +64,10 @@
 					class="menu menu-sm dropdown-content mt-3 z-[1] shadow bg-base-100 rounded-box w-52"
 				>
 					<li>
-						<a class="justify-between" href="/profile">
-							Profile <span class="badge">New</span>
+						<a class="justify-between" href="/settings">
+							Settings <span class="badge">New</span>
 						</a>
 					</li>
-					<li><a href="/setting">Settings</a></li>
 					<li><a href="/logout">Logout</a></li>
 				</ul>
 			</div>

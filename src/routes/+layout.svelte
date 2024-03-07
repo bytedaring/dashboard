@@ -1,8 +1,9 @@
 <script>
-	import '$lib/styles.css';
+	import '$lib/app.css';
 	import Nprogress from 'nprogress';
 	import 'nprogress/nprogress.css';
 	import { navigating, updated } from '$app/stores';
+	import { Toaster } from '@jill64/svelte-toast';
 
 	Nprogress.configure({ minimun: 0.16, showSpinner: false });
 
@@ -13,6 +14,7 @@
 </script>
 
 <main data-sveltekit-reload={$updated ? '' : 'off'}>
+	<Toaster position="top-center" palette={{ background: '#FFF' }} />
 	<slot />
 </main>
 
