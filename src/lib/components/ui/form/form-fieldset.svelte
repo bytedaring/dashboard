@@ -1,11 +1,11 @@
 <script lang="ts" context="module"></script>
 
 <script lang="ts" generics="T extends Record<string, unknown>, U extends FormPath<T>">
-	import * as FormPrimitive from "formsnap";
-	import { cn } from "$lib/utils";
+	import * as FormPrimitive from 'formsnap';
+	import { cn } from '$lib/utils';
 	export let form;
 	export let name;
-	let className = undefined;
+	let className = '';
 	export { className as class };
 </script>
 
@@ -16,7 +16,7 @@
 	let:errors
 	let:tainted
 	let:value
-	class={cn("space-y-2", className)}
+	class={cn('space-y-2', className)}
 >
 	<slot {constraints} {errors} {tainted} {value} />
 </FormPrimitive.Fieldset>

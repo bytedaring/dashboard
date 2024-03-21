@@ -1,7 +1,7 @@
 <script lang="ts">
 	// Without a +page.js or +page.ts file
 	import { accountSchema, languages } from '$lib/schemas/forms';
-	import { superForm, defaults } from 'sveltekit-superforms';
+	import SuperDebug, { superForm, defaults } from 'sveltekit-superforms';
 	import { zod } from 'sveltekit-superforms/adapters';
 	import { cn } from '$lib/utils';
 
@@ -10,7 +10,6 @@
 	import Calendar from '$components/ui/calendar/calendar.svelte';
 	import * as Form from '$components/ui/form';
 	import { Input } from '$components/ui/input';
-	import SuperDebug from 'sveltekit-superforms';
 	import * as Popover from '$components/ui/popover';
 	import * as Command from '$components/ui/command';
 	import {

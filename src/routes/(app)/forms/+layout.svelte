@@ -30,7 +30,7 @@
 </div>
 <div class="divider" />
 <div class="flex flex-col lg:flex-row lg:space-x-0 lg:space-y-0">
-	<aside>
+	<aside class="mx-4 lg:w-1/6">
 		<SidebarNav items={sidebarNavItems} />
 	</aside>
 	<div class="flex-1 lg:max-w-2xl">

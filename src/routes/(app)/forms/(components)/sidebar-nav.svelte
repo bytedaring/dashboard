@@ -20,7 +20,7 @@
 			{@const isActive = $page.url.pathname === item.href}
 			<li>
 				{#if item.href}
-					<a href={item.href} class={cn(isActive ? 'active' : '', 'group')}>
+					<a href={item.href} class={cn(isActive ? 'bg-muted' : '', 'group')}>
 						{item.title}
 					</a>
 				{/if}
